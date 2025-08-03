@@ -1,0 +1,383 @@
+<!doctype html>
+    <html>
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+            <meta charset="utf-8">
+            <meta name ="viewport" content="width=device-width, initial-scale=1">
+            <title>My Web Page</title>
+            <style>
+                body {
+                    font-family: Montserrat;
+                    margin:0;
+                    background: whitesmoke;
+                }
+                p, a{
+                    font-size: 16px;
+                }
+                h1, h2, h3, h4{
+                    font-weight: normal;
+                }
+                .banner{
+                    width: 100%;
+                    height: 100vh;
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('images/new_banner.jpg');
+                    color: white;
+                    font-size: 24px; 
+                    background-size: cover;
+                    background-position: top right;
+                    background-attachment: fixed;
+                }
+                .banner-content {
+                    width:80%;
+                    margin-left:10%;
+                    padding-top: 50px;;
+                }
+                .banner-content h1 {
+                    margin: 0;
+                }
+                .firstnav{
+                    display:table;
+                    width: 100%;
+                    background:white;
+                    padding:0px 20px;
+                    color:rgb(15, 15, 15);
+                }
+                .header{
+                    width:20%;
+                    float:left;
+                    color: #4e42f5;
+                    font-weight: normal;
+                }
+                .navbar{
+                    width: 50%;
+                    float:left;
+                    margin-left: 6%;
+                }
+                .navbar a{
+                    display: block;
+                    float: left;
+                    text-decoration: none;
+                    padding: 10px;
+                    font-size:14px;
+                    color: black;
+                }
+                .social_divs{
+                    float:right;
+                    width:20%;
+                }
+                .social_divs a{
+                    display: block;
+                    float: right;
+                    color:black;
+                    text-decoration: none;
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            .navbar, .social_divs{
+                padding-top:30px;
+            }
+
+            .intro a{
+                color:white;
+                background: #4e42f5;
+                padding: 10px;
+                text-decoration: none;
+            }
+            .intro{
+                width: 40%;
+                padding-top: 10%;
+            }
+            .intro h1{
+                font-weight: normal;
+            }
+            .about_divs{
+                display: table;
+                float: left;
+                width: 45%;
+                margin-right: 5%;
+                height: 500px;
+            }
+            .about_image{
+                background: url('images/about.jpg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;
+            }
+            .about{
+                padding-top:50px;
+                width: 80%;
+                margin-left: 10%;
+            }
+            .my_divs{
+                padding-top:50px;
+                width: 80%;
+                margin-left: 10%;
+                clear:left
+            }
+            .titles, .sub_titles{
+                text-align: center;
+                font-weight: normal;
+            }
+            .titles{
+                color:#4e42f5;
+                margin-bottom: 0;
+            }
+            
+            .edu_image{
+                background: url('images/edu.jpg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;
+            }
+            .edu_divs{
+                width: 32%;
+                background: white;
+                display: table;
+                padding: 50px 20px;
+                text-align: left;
+                float: left;
+                margin: 0 1%;
+            }
+            .education{
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('images/edu.jpg');
+                display: table;
+                width: 100%;
+                padding: 50px 0%;
+                padding-right:30px 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            .edu_main{
+                width: 80%;
+                margin-left: 10%;
+                display: flex;
+            }
+            .education .titles, .education .sub_titles{
+                color: white;
+            }
+            .the_int_div{
+                width: 48%;
+                margin:0 1%;
+                display: table;
+                float: left;
+                margin-bottom: 50px;
+            }
+            .progress_bar{
+                width: 100%;
+                background: white;
+            }
+            .progress_percent{
+                padding: 5px;
+                background: #4e42f5;
+            }
+            .projects_divs{
+                width: 28%;
+                margin:20px 1%;
+                float: left;
+                background-size: cover !important;
+                background-position: center !important;
+                display: table;
+                height: 400px;
+                color:white;
+                padding: 1%;
+            }
+            .projects_divs h1{
+                margin-top: 80%;
+            }
+            .projects_divs a{
+                color: white;
+                text-decoration: none;
+            }
+            .projects_divs a:hover{
+                font-weight: bold;
+            }
+            input, textarea{
+                width: 100%;
+                border: 1px solid #4e42f5;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            input:focus, textarea:focus{
+                outline:none;
+            }
+            textarea{
+                height:200px;
+            }
+            .contact button{
+                background: #4e42f5;
+                color:white;
+                border:0;
+                padding: 10px;
+                display: block;
+                width: 50%;
+                margin-left: 25%;
+                border-radius: 5px;
+            }
+            .contact{
+                margin-bottom: 50px;
+            };
+            </style>
+        </head>
+        <body>
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="firstnav">
+                        <h3 class="header">Onyibe Dennis</h3>
+                        <div class="navbar">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#education">Education</a>
+                            <a href="#interest">Interest</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        <div class="social_divs">
+                            <a href="https://www.facebook.com/share/14HYFgFE3Ei/"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/goblinA1_"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.tiktok.com/@goblina1_"><i class="bi bi-tiktok"></i></a>
+                            <a href="https://github.com/goblin-A1"><i class="bi bi-github"></i></a>
+                        </div>
+                </div>
+
+                <div class="intro">
+                    <h1>Hi, I'm Dennis</h1>
+                    <p>A versatile and results-driven individual with a multidisciplinary background spanning law, technology, and digital strategy. Skilled in legal research, negotiation, and public speaking, with strong experience in team and community management. Technically proficient in Python, database management, web development, and prompt engineering. Demonstrates creative ability in graphic design and CMS management, alongside hands-on knowledge of crypto trading. Adept at bridging communication and innovation across diverse teams and industries.</p>
+                    <a href="images/goblin_cv.pdf" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="about my_divs" id="about">
+                <div class="about_divs about_image">
+                    
+                </div>
+                <div class="about_divs">
+                    <h3>About</h3>
+                    <p>Hi, I’m Onyibe Dennis — also known in the Web3 Ecosystem as Goblin. I’m a multi-disciplinary creative and problem-solver, blending a strong academic foundation in law and communication with hands-on expertise in modern technology and digital innovation..</p>
+                    <p>With core strengths in Debate, Public Speaking, Legal Research, Negotiation, and Team Management, I thrive in both collaborative environments and high-stakes situations. My academic journey has sharpened my ability to think critically, speak persuasively, and write with precision — tools I now apply across multiple domains.</p>
+                    <p> On the tech side, I'm deeply invested in building and innovating. I work confidently with: Python, Database Management, Web Development (HTML/CSS/JS), Prompt Engineering, Graphic Design, CMS Platforms (WordPress), Crypto Trading and Token Launches (including pump.fun)</p>
+                    <p>In short, Goblin and Onyibe Dennis are one and the same — a dual-force of academic insight and technical execution, committed to learning, building, and leading with impact.</p>
+                </div>
+            </div>
+
+            <div class="education" id="education">
+                <h1 class="titles">My Education</h1>
+                <p class="sub_titles">Check out the education I've gone through</p>
+                <div class="edu_main">
+                <div class="edu_divs">
+                    <h1><i class="bi bi-escape"></i></h1>
+                    <p>Primary School</p>
+                    <p>I attended Handmaids Nursery and Primary School Iboko, where I graduated as one of the most promising students in my set.</p> 
+                    <p>I represented my school in both Accademic and Sports Competitions (Debate and Foothball).</p>
+                    <p>I Left the school in 2015 as one of the the most outspoken student.</p>
+                    <p>I served as an MC in my class graduation ceremony, which sparked my interest in public speaking.</p>
+                </div>
+                <div class="edu_divs">
+                    <h1><i class="bi bi-mortarboard"></i></h1>
+                    <p>Secondary School</p>
+                    <p>I Recieved my SSCE in Twelve Apostles College, Ndiaboishiagu Sharon.</p>
+                    <p>After leaving my Primary School in Flying colors, I was now able to explore my full accademic potential</p>
+                    <p>Joined the school in 2015 and made it to the school debate team in 2017, there i won several awards and left the school as one of the most decorated students till date.</p>
+                </div>
+                <div class="edu_divs">
+                    <h1><i class="bi bi-mortarboard"></i></h1>
+                    <p>Tertiary Institution</p>
+                    <p>I am currently a student of Ebonyi State Abakaliki,Ebonyi State, Nigeria. where I am pursuing a degree in Law.</p>
+                    <p>My time at the university has been transformative, allowing me to deepen my understanding of legal principles while also building a life as a problem solvere, through Technology.</p>
+                    <p>I have also held events in my school aimed at promoting the mass adoption of the web3 ecosystem.</p>
+                </div>  
+                </div> 
+
+
+            </div>
+            <div class="interest my_divs" id="interest">
+                <div class="the_int_div">
+                    <h1>My Interest</h1>
+                    <p>I'm passionate about the intersection of law, technology, and digital innovation. I enjoy engaging in debate and public speaking, using my voice to advocate, educate, and inspire. My curiosity in legal-tech drives me to explore how code and blockchain can solve real-world problems. I'm also deeply involved in Web3 strategy, community building, and creative development, where I combine design, communication, and technical skills. Outside the digital space, I'm an avid football enthusiast, finding both excitement and teamwork in the game.</p>
+                </div>
+                <div class="the_int_div">
+                    <p class="sub_titles" style="text-align: left;">My Interest</p>
+
+                    <div class="interests">
+                        <p>Tech-Law (25%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 60%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p> Blockchain Research (25%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 60%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Debate (20%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 45%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Community Building (15%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 29%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Foothball (15%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 29%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="projects my_divs" id="projects">
+    <h1 class="titles">My Projects</h1>
+    <p class="sub_titles">Check out my projects</p>
+    <div class="projects_divs" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/project1.jpg');">
+        <h1>Project 1</h1>
+        <a href="https://x.com/goblinA1_/status/1889811048330567959?t=SNl4Soe2jNTAjaFwuhzjFw&s=19">Go-to Project</a>
+    </div>
+    <div class="projects_divs" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/project2.jpg')">
+        <h1>Project 2</h1>
+        <a href="https://x.com/goblinA1_/status/1937828991118827674">Go-to Project</a>
+    </div>
+    <div class="projects_divs" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/project3.jpg');">
+        <h1>Project 3</h1>
+        <a href="">Go-to Project</a>
+    </div>
+</div>
+
+<div class="contact my_divs" id="contact">
+    <h1 class="titles">Contact</h1>
+    <p class="sub_titles">Reach out via the form below</p>
+    <form method="post">
+        <input type="text" placeholder="Enter Full Name" name="fullname">
+        <input type="text" placeholder="Enter Email Address" name="email">
+        <textarea placeholder="Enter Your Message" name="message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    
+</div>
+        </body>
+    </html>
