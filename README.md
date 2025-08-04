@@ -1,6 +1,7 @@
 # 🧑‍💻 Personal Portfolio – Onyibe Dennis (Goblin)
 
 This is a fully responsive, single-page personal portfolio website built with **HTML and CSS**. It reflects the personal brand, technical experience, academic journey, and Web3 interests of **Onyibe Dennis**, known in the Web3 ecosystem as **Goblin**.
+view project on browser: https://hackathon-plp-pwc6.vercel.app/
 
 ---
 
@@ -38,5 +39,8 @@ The goal is to offer a snapshot of my capabilities in both **tech** and **law**,
 
 ---
 
-## 📂 Folder Structure
+## 📂 Key Note:
+- I struggled with media queries and was not able to add small screen device queries to my css.
+ because of that, it is not good on small screen but gives you a perfect user interface on PC and large screens
+
 
